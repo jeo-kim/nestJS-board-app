@@ -12,7 +12,6 @@ export class BoardsController {
     @Get()
     getAllBoards(): Board[] {
         return this.boardsService.getAllBoards();
-
     }
 
 }

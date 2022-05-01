@@ -7,4 +7,11 @@ export class BoardsController {
     // 접근제어자를 생성자 파라미터에 선언하면, 생성자 파라미터는 암묵적으로 클래스 프로퍼티로 사용된다.
     constructor(private boardsService: BoardsService) {}
 
+
+    @Get()
+    getAllBoards() {
+        return this.boardsService.getAllBoards();
+
+    }
+
 }
